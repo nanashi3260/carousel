@@ -102,18 +102,17 @@ body {
 }
 
 .buttons button {
-  border: 2px solid #e5ebf3;
+  border: none;
   background-color: transparent;
-  color: #e5ebf3;
+  color: #aaa;
+  font-size: 2rem;
   cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
-  outline: none;
+  padding: 10px;
+  transition: color 0.2s ease;
 }
 
 .buttons button:hover {
-  background-color: #e5ebf3;
-  color: #362a2b;
+  color: #fff;
 }
 
 @media (min-width: 640px) and (min-height: 640px) {
@@ -149,10 +148,10 @@ body {
   <div class="slide"></div>
   <div class="slide"></div>
 </div>
-  <div class="buttons">
-    <button id="prev"><i class="fas fa-arrow-left"></i></button>
-    <button id="next"><i class="fas fa-arrow-right"></i></button>
-  </div>
+<div class="buttons">
+  <button id="prev">‹</button>
+  <button id="next">›</button>
+</div>
   <!-- partial -->
   <script>
     const slides = document.querySelectorAll(".slide");
