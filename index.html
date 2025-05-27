@@ -17,13 +17,15 @@
       background-color: #292929;
     }
 
-  .slider {
+.slider {
   width: 100%;
-  aspect-ratio: 1 / 1; /* ← сохраняет квадратную форму */
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+
+  /* ХАК: квадратная пропорция через паддинг */
+  padding-bottom: 100%; /* ← вот она магия */
 }
 
     .slide {
