@@ -20,21 +20,10 @@
 
 .slider {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  aspect-ratio: 1 / 1; /* квадрат всегда */
   position: relative;
   overflow: hidden;
-  height: 100vw; /* ← по умолчанию квадрат от ширины экрана */
-  max-height: 800px; /* не выше десктопного лимита */
 }
-
-/* На очень широких экранах — ограничим */
-@media (min-width: 800px) {
-  .slider {
-    height: 800px;
-  }
-}
-
 
     .slide-wrapper {
       position: absolute;
